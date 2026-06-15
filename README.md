@@ -1,5 +1,12 @@
 # Apoorv Portfolio Backend
 
+![Node.js](https://img.shields.io/badge/Runtime-Node.js-339933?logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Framework-Express.js-000000?logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-47A248?logo=mongodb&logoColor=white)
+![Mongoose](https://img.shields.io/badge/ODM-Mongoose-880000?logo=mongoose&logoColor=white)
+![JWT](https://img.shields.io/badge/Auth-JWT-000000?logo=jsonwebtokens&logoColor=white)
+![bcrypt](https://img.shields.io/badge/Security-bcryptjs-6c63ff)
+
 Backend API for Apoorv Singh's portfolio and admin CMS. This service powers portfolio content management for projects, skills, and experience entries, with protected admin-only create, update, and delete operations.
 
 ## Tech Stack
