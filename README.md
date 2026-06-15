@@ -98,18 +98,6 @@ npm run seed:content
 
 The content seed uses upsert logic, so rerunning it updates existing records instead of creating duplicates.
 
-### 5. Start Development Server
-
-```bash
-npm run dev
-```
-
-The API will run at:
-
-```txt
-http://localhost:5000
-```
-
 ## Available Scripts
 
 ```bash
@@ -345,58 +333,3 @@ Protected route.
 ```http
 DELETE /api/experience/:id
 ```
-
-## Database Models
-
-### Admin
-
-- `username`
-- `password`
-
-Passwords are hashed automatically before saving.
-
-### Project
-
-- `num`
-- `title`
-- `description`
-- `github`
-- `live`
-
-### Skill
-
-- `name`
-- `color`
-- `iconProvider`
-- `icon`
-
-### Experience
-
-- `role`
-- `company`
-- `period`
-- `points`
-- `tags`
-
-## Deployment Notes
-
-Before deploying:
-
-- Add production environment variables on the hosting platform.
-- Do not commit `.env`.
-- Do not commit `node_modules`.
-- Use a strong `JWT_SECRET`.
-- Make sure MongoDB Atlas allows connections from your deployment environment.
-
-## Should the Scripts Folder Be Committed?
-
-Yes. The `scripts/` folder should be committed because it contains useful setup utilities:
-
-- `seedAdmin.js` creates the first admin account.
-- `seedContent.js` imports initial portfolio data into MongoDB.
-
-These scripts do not contain secrets by themselves. Secrets are read from `.env`, which should not be committed.
-
-## License
-
-ISC
